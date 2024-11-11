@@ -49,10 +49,6 @@ function movingFolders() {
                 mv "fontawesome" "$iconsPath"
             fi
             
-            if [ "$dir" = "fonts" ]; then
-                mv "fonts" "$fontsPath"
-            fi
-            
             mv "$dir" "$HOME/.config"
         else
             echo "$dir" "directory does not exist"
