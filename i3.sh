@@ -28,12 +28,11 @@ function movingFolders() {
     fi
     
     cd "dotConfig"
-    for dir in "dunst" "i3" "i3status" "rofi" "terminator" "scripts" "fontawesome" "fonts"; do
+    for dir in "dunst" "i3" "i3status" "rofi" "terminator" "scripts" "fontawesome"; do
         
         local themesPath="/usr/share/rofi/themes/"
         local documentsPath="$HOME/Documents"
         local iconsPath="$HOME/.local/share/icons"
-        local fontsPath="$HOME/.local/share"
         
         if [ -d "$dir" ]; then
             
