@@ -8,7 +8,7 @@ function esensialPackages() {
     packages=("xorg" "xorg-xinit" "i3-wm" "xscreensaver" "i3status" "rofi" "terminator" "firefox" "ttf-font-awesome"
         "materia-gtk-theme" "papirus-icon-theme" "lxappearance" "nitrogen" "picom"
         "pulseaudio" "pamixer" "alsa-utils" "vlc" "base-devel" "dunst" "acpi" "trayer" "pcmanfm" "git" "networkmanager"
-    "network-manager-applet" "cronie" "okular" "flameshot" "noto-fonts" "zip" "unzip" "xdotool")
+    "network-manager-applet" "cronie" "okular" "flameshot" "noto-fonts" "zip" "unzip" "xdotool", "ttf-dejavu")
     
     sudo pacman -S "${packages[@]}"
     git clone https://github.com/Ventto/lux.git;cd lux;sudo make install;cd ..;sudo rm -rf lux
